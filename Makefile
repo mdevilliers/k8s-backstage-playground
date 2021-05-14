@@ -30,7 +30,7 @@ install: k8s_connect
 
 .PHONY: port_forward
 port_forward:
-	sudo kubectl port-forward --namespace=backstage svc/backstage 80:80
+	kubectl port-forward --namespace=backstage svc/backstage 7000:80
 
 .PHONY: build_backstage
 build_backstage:
