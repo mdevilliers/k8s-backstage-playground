@@ -6,3 +6,12 @@ backend:
   baseUrl: http://localhost:7000
   listen:
     port: 7000
+
+database:
+  client: pg
+  connection:
+    host: ${POSTGRES_SERVICE_HOST}
+    port: ${POSTGRES_SERVICE_PORT}
+    user: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+
